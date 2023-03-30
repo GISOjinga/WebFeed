@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+.TitleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 254, 254);
+    
+} .TitleBox h1 {
+    padding: auto;
+    margin: 0px;
+    margin-right: 100px;
+    font-size: auto;
+}
+
+
+.PhotoBoxes-Holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(219, 219, 219);
+} .PhotoBoxes-Holder h1 {
+    margin: auto;
+    font-size: auto;
+} 
+
+/* photo box*/
+.PhotoBox {
+    margin: 30px;
+    margin-top: 50px;
+    width: 450px;
+    height: 400px;
+
+    background-color: rgb(182, 28, 243);
+}
+
+
+/* Title Box parts */
+.PhotoBox-TitleBox {
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.PhotoBox-TitleBox .boxTitle {
+    font-size: 100%;
+    padding-left: 10px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.PhotoBox-TitleBox .boxCount {
+    font-size: 100%;
+    padding-right: 10px;
+    font-weight: bold;
+
+    color: grey;
+}
+
+
+
+
+/* photo box parts*/
+.PhotoBox-Photo {
+    width: 100%;
+    height: 75%;
+
+    background-color: rgb(128, 37, 37);
+} .PhotoBox-Photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: fit;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* photo box descriptions*/
+.PhotoBox-DescriptionBox {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(253, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} .PhotoBox-DescriptionBox .description {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    font-size: 90%; /* Use viewport width unit to make the font size responsive */
+    overflow: visible; /* Add this property to handle overflowing content */
+    word-wrap: break-word; /* Add this property to make the text wrap */
+}
